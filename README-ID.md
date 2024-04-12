@@ -60,7 +60,7 @@ Bazzite dibentuk dari [ublue-os/main](https://github.com/ublue-os/main) and [ubl
 - Driver [GCAdapter_OC](https://github.com/hannesmann/gcadapter-oc-kmod) untuk men-overclocking Kontroller Nintendo Gamecube sampai dengan 1000hz polling.
 - Dukungan untuk keyboard [Wooting](https://wooting.io/).
 - Dukungan untuk kartu grafis Southern Islands <sub><sup>(HD 7000)</sup></sub> and Sea Islands <sub><sup>(HD 8000)</sup></sub> dengan driver `amdgpu`.
-- Memperbaiki masalah untuk [game yang menggunakan engine Source 1 <sub><sup>(Contoh: TF2)</sup></sub>](https://github.com/ValveSoftware/Source-1-Games/issues/5043) yang membuat game-nya crash saat dijalankan `ujust patch-source1-tcmalloc`
+- Memperbaiki masalah untuk [game yang menggunakan engine Source 1 <sub><sup>(Contoh: TF2)</sup></sub>](https://github.com/ValveSoftware/Source-1-Games/issues/5043) yang membuat game-nya crash saat dijalankan `ujust fix-source1-tcmalloc`
 - [XwaylandVideoBridge](https://invent.kde.org/system/xwaylandvideobridge) untuk Discord screensharing di Wayland.
 - [Webapp Manager](https://github.com/linuxmint/webapp-manager) tersedia untuk membuat aplikasi dari situs web dengan berbagai macam peramban, termasuk Firefox.
   
@@ -216,7 +216,6 @@ Baca [FAQ](https://universal-blue.discourse.group/docs?topic=33) untuk tahu apa 
 - [Updates, Rollbacks, and Rebasing](https://universal-blue.discourse.group/docs?topic=36)
 - [Panduan Gim](https://universal-blue.discourse.group/docs?topic=31)
 - [Panduan dual booting](https://universal-blue.discourse.group/docs?topic=129)
-- [Dokumentasi yang lain](https://universal-blue.discourse.group/docs?topic=287)
 
 Temukan dokumentasi tambahan project ini [disini](http://docs.bazzite.gg/).
 
@@ -272,7 +271,6 @@ Sebagai tambahan, paket-paket berikut ini digunakan dari repository Copr:
 | [gcadapter_oc-kmod](https://copr.fedorainfracloud.org/coprs/ublue-os/akmods/)                                 | ![Build Status](https://copr.fedorainfracloud.org/coprs/ublue-os/akmods/package/gcadapter_oc-kmod/status_image/last_build.png?)                                 |
 | [gnome-vrr](https://copr.fedorainfracloud.org/coprs/kylegospo/gnome-vrr/)                                     | ![Build Status](https://copr.fedorainfracloud.org/coprs/kylegospo/gnome-vrr/package/mutter/status_image/last_build.png?)                                        |
 | [hhd](https://github.com/hhd-dev/hhd)                                                                         | ![Build Status](https://copr.fedorainfracloud.org/coprs/hhd-dev/hhd/package/hhd/status_image/last_build.png?)                                                   |
-| [hl2linux-selinux](https://copr.fedorainfracloud.org/coprs/kylegospo/hl2linux-selinux/)                       | ![Build Status](https://copr.fedorainfracloud.org/coprs/kylegospo/hl2linux-selinux/package/hl2linux-selinux/status_image/last_build.png?)                       |
 | [joycond](https://copr.fedorainfracloud.org/coprs/kylegospo/joycond/)                                         | ![Build Status](https://copr.fedorainfracloud.org/coprs/kylegospo/joycond/package/joycond/status_image/last_build.png?)                                         |
 | [kernel-fsync](https://copr.fedorainfracloud.org/coprs/sentry/kernel-fsync/)                                  | ![Build Status](https://copr.fedorainfracloud.org/coprs/sentry/kernel-fsync/package/kernel/status_image/last_build.png?)                                        |
 | [latencyflex-vulkan-layer](https://copr.fedorainfracloud.org/coprs/kylegospo/LatencyFleX/)                    | ![Build Status](https://copr.fedorainfracloud.org/coprs/kylegospo/LatencyFleX/package/latencyflex-vulkan-layer/status_image/last_build.png?)                    |

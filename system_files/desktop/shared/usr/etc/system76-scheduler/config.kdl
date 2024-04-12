@@ -24,7 +24,7 @@ process-scheduler enable=true {
     // Preset process assignment profiles
     assignments {
         // Prevent crackling and distortion from the sound server
-        sound-server nice=-15 sched=(fifo)49 io=(realtime)0 {
+        sound-server nice=-15 io=(realtime)0 {
             "/usr/bin/pipewire"
             "/usr/bin/pipewire-pulse"
             "/usr/bin/jackd"
@@ -38,9 +38,6 @@ process-scheduler enable=true {
 
         // Video games
         games nice=-5 io=(best-effort)0
-
-        // Video game background tasks
-        games-background nice=0 io="idle"
 
         // Desktop environments
         desktop-environment nice=-3 io=(best-effort)0
@@ -79,6 +76,8 @@ process-scheduler enable=true {
         include descends="taskset"
         include descends="schedtool"
         chrt
+        coolercontrold
+        coolercontrol-liqctld
         dbus
         dbus-broker
         gamemoderun
@@ -86,6 +85,7 @@ process-scheduler enable=true {
         input-remapper-service
         ionice
         joystickwake
+        lact
         nice
         otd-daemon
         oversteer
@@ -94,6 +94,7 @@ process-scheduler enable=true {
         systemd
         taskset
         schedtool
+        sunshine
         tuned
         tuned-ppd
     }
